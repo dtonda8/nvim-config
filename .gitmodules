@@ -1,0 +1,6 @@
+[submodule "plugins/nvim-treesitter"]
+	path = plugins/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+[submodule "plugins/nvim-lspconfig"]
+	path = plugins/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
