@@ -1,20 +1,18 @@
 local function load_plugin(path)
-  vim.opt.rtp:prepend(vim.fn.stdpath("config") .. "/plugins/" .. path)
+    vim.opt.rtp:prepend(vim.fn.expand("~/.config/nvim-plugins/") .. "/" .. path)
 end
 
--- Load Treesitter
+-- Load plugins
 load_plugin("nvim-treesitter")
-
--- Treesitter configuration
-require("nvim-treesitter.configs").setup {
-  ensure_installed = {"python"},
-  highlight = { enable = true },
-  indent = { enable = true },
-}
-
--- load LSPConfig plugin
 load_plugin("nvim-lspconfig")
 
--- configure Python LSP
+-- Configure Treesitter
+require("nvim-treesitter.configs").setup {
+    ensure_installed = {"python"},
+    highlight = { enable = true },
+    indent = { enable = true },
+}
+
+-- Configure Python LSP
 require("lspconfig").pyright.setup{}
 
