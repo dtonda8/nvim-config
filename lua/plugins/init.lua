@@ -5,12 +5,12 @@ local function load_plugin(name)
 end
 
 -- Core plugin list
+load_plugin("vim-gitgutter")
 load_plugin("nvim-lspconfig")
 load_plugin("nvim-treesitter")
 load_plugin("plenary.nvim")
 load_plugin("telescope.nvim")
 load_plugin("vim-fugitive")
-load_plugin("vim-gitgutter")
 load_plugin("vim-commentary")
 
 -- Load plugin configs
