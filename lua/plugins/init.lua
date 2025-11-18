@@ -1,4 +1,4 @@
-local plugin_root = vim.fn.expand("~/.config/nvim-plugins/")
+local plugin_root = vim.fn.expand("~/.config/nvim-plugins/start/")
 
 local function load_plugin(name)
     vim.opt.rtp:prepend(plugin_root .. name)
