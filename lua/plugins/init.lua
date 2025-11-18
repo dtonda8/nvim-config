@@ -12,7 +12,10 @@ load_plugin("plenary.nvim")
 load_plugin("telescope.nvim")
 load_plugin("vim-fugitive")
 load_plugin("vim-commentary")
+load_plugin("yazi.nvim")
+load_plugin("bullets.vim")
 
 -- Load plugin configs
 require("plugins.configs.treesitter")
 require("plugins.configs.telescope")
+require("plugins.configs.yazi")

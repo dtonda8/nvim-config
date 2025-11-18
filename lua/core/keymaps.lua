@@ -9,4 +9,7 @@ map('n', '<leader>di', vim.lsp.buf.implementation, { desc = "Go to implementatio
 map('n', '<leader>dt', vim.lsp.buf.type_definition, { desc = "Go to type definition" })
 map('n', 'gr', vim.lsp.buf.references, { desc = "List references" })
 map('n', 'K', vim.lsp.buf.hover, { desc = "Hover info" })
-
+map("n", "<C-h>", "<C-w>h", opts)
+map("n", "<C-j>", "<C-w>j", opts)
+map("n", "<C-k>", "<C-w>k", opts)
+map("n", "<C-l>", "<C-w>l", opts)
