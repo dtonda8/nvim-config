@@ -14,8 +14,13 @@ load_plugin("vim-fugitive")
 load_plugin("vim-commentary")
 load_plugin("yazi.nvim")
 load_plugin("bullets.vim")
+load_plugin("lazygit.nvim")
+load_plugin("LuaSnip")
+load_plugin("blink.cmp")
 
 -- Load plugin configs
 require("plugins.configs.treesitter")
 require("plugins.configs.telescope")
 require("plugins.configs.yazi")
+require("plugins.configs.blink")
+
